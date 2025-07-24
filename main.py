@@ -12,7 +12,7 @@ last_data = None
 
 while True:
     try:
-        data = pd.read_csv("eurusd_prices_multiip.csv", parse_dates=["timestamp"], index_col="timestamp")
+        data = pd.read_csv("../eurusd_prices_multiip.csv", parse_dates=["timestamp"], index_col="timestamp")
         data['status'] = np.where(data['open'] > data['close'], 'bearish', 'bullish')
 
         if last_data is None or data.iloc[-1].name != last_data.name:
