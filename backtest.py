@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-from improved_project.utils import calculate_stop_reward
+from utils import calculate_stop_reward
 from strategy import TradingStrategy
 from logger import log
 

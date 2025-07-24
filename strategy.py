@@ -1,10 +1,9 @@
 # strategy.py
+from get_data_multiip import get_live_data
+from get_legs import get_legs
+from swing import get_swing_points
 from logger import log
 from utils import calculate_stop_reward
-from first_project.get_legs import get_legs
-from first_project.swing import get_swing_points
-from first_project.fibo_calculate import fibonacci_retracement
-from first_project.get_data_multiip import get_live_data
 from time import sleep
 
 class TradingStrategy:
